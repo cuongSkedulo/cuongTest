@@ -14,6 +14,7 @@ const customHandler = async (payload: FunctionPayload): Promise<FunctionResponse
   try {
 
     const { method, path, headers, body, querystring } = payload
+    console.log(payload)
 
     const matchedRoute = getCompiledRoutes()
       .filter(route => route.method === method.toLowerCase())

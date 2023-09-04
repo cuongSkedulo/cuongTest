@@ -3,8 +3,8 @@
   "private": true,
   "main": "dist/handler",
   "scripts": {
-    "bootstrap": "yarn install --audit --ignore-scripts ",
-    "dev": "export NODE_OPTIONS=--openssl-legacy-provider && webpack --watch --mode=development",
+    "bootstrap": "node -v && yarn install --audit --ignore-scripts ",
+    "dev": "node -v && export NODE_OPTIONS=--openssl-legacy-provider && webpack --watch --mode=development",
     "compile": "webpack --mode=production"
   },
   "devDependencies": {

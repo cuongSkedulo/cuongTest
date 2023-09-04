@@ -28,9 +28,9 @@ export function getCompiledRoutes() {
 function getRoutes(): FunctionRoute[] {
   return [
     {
-      method: 'get',
+      method: 'post',
       path: '/ping',
-      handler: async (__, headers) => {
+      handler: async (body, headers) => {
 
         const apiToken = headers.Authorization.split('Bearer')[1].trim()
         const apiServer = headers['sked-api-server']
