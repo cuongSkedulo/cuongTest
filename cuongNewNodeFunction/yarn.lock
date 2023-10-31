@@ -2,6 +2,14 @@
 # yarn lockfile v1
 
 
+"@skedulo/function-header-helper@0.0.0":
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/@skedulo/function-header-helper/-/function-header-helper-0.0.0.tgz#cfd9630388fabaecf72b0e5a876dc90b01bee051"
+  integrity sha512-l+TVMltVgIU5MPhVQ5dPqwUHtgjJosrf0M//1RcrivH5pRnrFE73JgjpC8mpM/bXBHTG8KWqN0XAzl7+4d2IrQ==
+  dependencies:
+    jwt-decode "^4.0.0"
+    typescript "~5.1.0"
+
 "@skedulo/sdk-utilities@^0.2.14":
   version "0.2.30"
   resolved "https://registry.yarnpkg.com/@skedulo/sdk-utilities/-/sdk-utilities-0.2.30.tgz#4f298aa8ba0da4161d31c45a405535025b9d4ced"
@@ -1585,6 +1593,11 @@ jws@^3.2.2:
     jwa "^1.4.1"
     safe-buffer "^5.0.1"
 
+jwt-decode@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/jwt-decode/-/jwt-decode-4.0.0.tgz#2270352425fd413785b2faf11f6e755c5151bd4b"
+  integrity sha512-+KJGIyHgkGuIq3IEBNftfhW/LfWhXUIY6OmyVWjliu5KH1y0fw7VQ8YndE2O4qZdMSd9SqbnC8GOcZEy0Om7sA==
+
 kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-3.2.2.tgz#31ea21a734bab9bbb0f32466d893aea51e4a3c64"
@@ -2676,6 +2689,11 @@ typescript@^3.8.2:
   version "3.9.10"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.10.tgz#70f3910ac7a51ed6bef79da7800690b19bf778b8"
   integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
+
+typescript@~5.1.0:
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.1.6.tgz#02f8ac202b6dad2c0dd5e0913745b47a37998274"
+  integrity sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==
 
 union-value@^1.0.0:
   version "1.0.1"

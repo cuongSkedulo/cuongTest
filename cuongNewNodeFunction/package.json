@@ -5,7 +5,7 @@
   "scripts": {
     "bootstrap": "node -v && yarn install --audit --ignore-scripts ",
     "dev": "node -v && export NODE_OPTIONS=--openssl-legacy-provider && webpack --watch --mode=development",
-    "compile": "webpack --mode=production"
+    "compile": "export NODE_OPTIONS=--openssl-legacy-provider && webpack --mode=production"
   },
   "devDependencies": {
     "@types/node": "18.0.0",
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@skedulo/sdk-utilities": "^0.2.14",
+    "@skedulo/function-header-helper": "0.0.0",
     "@types/lodash": "^4.14.144",
     "@types/path-to-regexp": "^1.7.0",
     "axios": "^0.19.0",

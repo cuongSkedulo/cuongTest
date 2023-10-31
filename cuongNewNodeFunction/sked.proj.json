@@ -1,1 +1,1 @@
-{"type":"function","runtime":"nodejs18.x","name":"cuongNewNodeFunction","description":"cuongNewNodeFunction"}
+{"type":"function","runtime":"nodejs18.x","name":"cuongNewNodeFunction","description":"cuongNewNodeFunction", "metadata": {"aws:cdk:path": "cuongNewNodeFunction/cuongNewNodeFunction/Resource"}}

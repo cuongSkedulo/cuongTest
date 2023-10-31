@@ -3,19 +3,17 @@
  * This usually does not need to be changed. Start writing your function
  * by defining a route in the `routes.ts` file.
  */
-import { FunctionPayload, FunctionResponse, Function } from '@skedulo/sdk-utilities'
+import { FunctionPayload, FunctionResponse, Function, extractAuthorizationInfoFromHeader } from '@skedulo/sdk-utilities'
 
+import { requestWrapper } from '@skedulo/function-header-helper'
 import { getCompiledRoutes } from './routes'
 
 // Full handler for Skedulo Function.
 const customHandler = async (payload: FunctionPayload): Promise<FunctionResponse<any>> => {
   const start = Date.now()
-
+  const { method, path, headers, body, querystring } = payload
   try {
-
-    const { method, path, headers, body, querystring } = payload
-    console.log(payload)
-
+    requestWrapper(headers)
     const matchedRoute = getCompiledRoutes()
       .filter(route => route.method === method.toLowerCase())
       .find(route => !!route.regex.exec(path))

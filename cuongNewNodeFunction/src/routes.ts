@@ -45,15 +45,10 @@ function getRoutes(): FunctionRoute[] {
       method: 'get',
       path: '/action',
       handler: async (body: RequestPayload, headers) => {
-
-        console.log(process.version)
-
-        const apiToken = headers.Authorization.split('Bearer')[1].trim()
-        const apiServer = headers['sked-api-server']
+        console.log(globalThis.authorizationInfo)
 
         return {
-          status: 200,
-          body: { apiToken, apiServer, requestBody: body }
+          status: 200
         }
       }
     }
